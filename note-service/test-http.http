@@ -1,0 +1,30 @@
+### Crear una tarea
+POST http://localhost:8081/tasks
+Content-Type: application/json
+
+{
+  "title": "Estudiar Spring Boot",
+  "description": "Revisar integración con Feign",
+  "completed": false
+}
+
+###
+
+### Obtener todas las tareas
+GET http://localhost:8081/tasks
+
+###
+
+### Crear una nota
+POST http://localhost:8082/notes
+Content-Type: application/json
+
+{
+  "content": "Recordar leer documentación de Feign",
+  "important": true
+}
+
+###
+
+### Obtener todas las notas
+GET http://localhost:8082/notes
