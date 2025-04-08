@@ -1,0 +1,26 @@
+### Crear una nueva tarea
+POST http://localhost:8081/tasks
+Content-Type: application/json
+
+{
+  "title": "Mandar CV a empresa",
+  "description": "Mandar CV a empresa de tecnología",
+  "completed": false
+}
+
+PUT http://localhost:8081/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Actualizar microservicio",
+  "description": "Ahora soporta PUT",
+  "completed": true
+}
+### Obtener todas las tareas
+GET http://localhost:8081/tasks
+
+### Obtener una tarea por ID
+GET http://localhost:8081/tasks/4
+
+### Eliminar una tarea por ID
+DELETE http://localhost:8081/tasks/3
